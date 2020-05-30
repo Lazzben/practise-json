@@ -27,6 +27,8 @@ public class Main {
         System.out.println(json);
 
         student = deserialize(json);
+
+        System.out.println("student = " + student.isFail());
     }
     // 序列化：将Student类转换成JSON字符串
     public static String serialize(Student student) {
